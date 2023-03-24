@@ -1,0 +1,11 @@
+version: '3'
+
+services:
+  go-all-the-way:
+    build: . 
+    container_name: go-all-the-way
+    volumes:
+      - .:/go/src/go-all-the-way
+    ports:
+      - "8080:8080"
+    
